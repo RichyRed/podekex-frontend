@@ -15,7 +15,7 @@ function App() {
     getTrainerId();
   }, []);
 
-  return <><h1>Git Action</h1></>;
+  return <><h1>Git Action Test</h1></>;
 }
 
 export default App;
