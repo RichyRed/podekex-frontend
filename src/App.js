@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-// import { PokeCard } from "./components/PokeCard";
+import { PokeCard } from "./components/PokeCard";
 import API from "./config/api";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     getTrainerId();
   }, []);
 
-  return <><h1>Git Action Test</h1></>;
+  return <><PokeCard idPokemon={2}/></>;
 }
 
 export default App;
