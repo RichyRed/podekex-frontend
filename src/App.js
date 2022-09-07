@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { PokeCard } from "./components/PokeCard";
+import { Counter } from "./components/Counter";
 import API from "./config/api";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     getTrainerId();
   }, []);
 
-  return <><PokeCard idPokemon={2}/></>;
+  return <><Counter /></>;
 }
 
 export default App;
