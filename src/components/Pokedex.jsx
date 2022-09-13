@@ -1,9 +1,8 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment } from '../store/counter/counterSlice'
-import { login } from '../store/auth/authThunk'
+import { isLoading, pokemon, } from '../store/pokedex/pokedexSlice'
 
-export function Counter() {
+export function Pokedex() {
   const count = useSelector((state) => state.counter.value)
   const dispatch = useDispatch()
 
@@ -12,16 +11,16 @@ export function Counter() {
       <div>
         <button
           aria-label="Increment value"
-          onClick={() => dispatch(login())}
+          onClick={() => dispatch(increment())}
         >
-          Increment
+          isLoading
         </button>
         <span>{count}</span>
         <button
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
-          Decrement
+          Pokemon
         </button>
       </div>
     </div>
